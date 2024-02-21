@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Database</title>
+</head>
+<body>
+<table border="1">
+		<tr>
+			<th>Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			<th>Mobile number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			<th>Fooditem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			<th>Quantity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			<th>Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+		</tr>
+		{%for obj in objlist%}
+		<tr>
+			<td>{{obj.name}}</td>
+			<td>{{obj.mobileno}}</td>
+			<td>{{obj.fooditem}}</td>
+			<td>{{obj.quantity}}</td>
+			<td>{{obj.price}}</td>
+		</tr>
+		{%endfor%}
+	</table>
+</body>
+</html>
